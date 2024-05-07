@@ -3,7 +3,8 @@ services:
   vprodb:
     build:
     context: ./Public-docker/a-docker/Docker-files/db
-    image: vprofile/vprofiledb:V1
+  image: vprofile/vprofiledb:V1
+  container_name: vprodb
     ports:
       - "3306:3306"
     volumes:
